@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      href="https://media.istockphoto.com/id/931336618/vector/clock-vector-icon-isolated.jpg?s=612x612&w=0&k=20&c=I8EBJl8i6olqcrhAtKko74ydFEVbfCQ6s5Pbsx6vfas="
+      type="image/x-icon"
+    />
+    <title>Time Remaining</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-title">
+        <h1>Time <span class="d-red">Remaining</span></h1>
+      </div>
+      <div id="header-subtitle">
+        <h2>Calculate your clock out time for on Friday.</h2>
+      </div>
+    </header>
+    <main>
+      <p id="current-time">[Current Time]</p>
+      <div id="container">
+        <label for="time" class="red"
+          >Enter Your <span class="d-red">Time</span></label
+        >
+        <input type="number" name="time" id="time" />
+        <label for="clock-in" class="red"
+          >Enter Your Last <span class="d-red">Clock In Time</span></label
+        >
+        <input type="number" name="clock-in" id="" />
+        <div id="buttons">
+          <button id="submit-btn">Calculate</button>
+          <button id="info">?</button>
+        </div>
+        <div id="info-div" class="hidden">
+          <p id="info-text">To calculate the time required to clock out:</p>
+          <ul>
+            <li>
+              Enter the total number of hours you have worked so far after lunch
+              on Friday (e.g., 37.23).
+            </li>
+            <li>
+              The system calculates the remaining hours to reach 40 hours by
+              subtracting the entered hours from 40.
+            </li>
+            <li>
+              The remaining hours are converted to minutes by multiplying by 60.
+            </li>
+            <li>
+              The system then determines how many hours and minutes are left in
+              the day based on the remaining time.
+            </li>
+            <li>
+              For example, if you enter 37.23 hours:
+              <ul>
+                <li>40 - 37.23 = 2.77 hours remaining</li>
+                <li>.77 × 60 = 46.2 minutes</li>
+                <li>
+                  The clock-out time will be your clock-in time plus 2 hours and
+                  46 minutes and 12 seconds.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="time-out-div">
+          <p id="time-out">[Required time to clock out]</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

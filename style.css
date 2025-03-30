@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: #E31D1A;
+    font-size: 1.7em;
+    text-align: center;
+    padding: 5px 0 55px 0;
+}
+
+#header-subtitle{
+    color: #E31D1A;
+    font-size: .7rem;
+    text-align: center;
+}
+.red{
+    color: #E31D1A;
+}
+
+.d-red{
+   color:  #A13224;
+}
+
+main{
+    background-color: #7e7c7c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 30px;
+
+}
+
+#current-time{
+    position: relative;
+    bottom: 55px;
+    background-color: #ffffff;
+    padding: 13px 25px;
+    border-radius: 2px;
+    box-shadow: #5c5b5ba8 0px 0px 5px 0px;
+}
+
+#container{
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   padding: 35px 75px;
+   width: 600px;
+   border-radius: 2px;
+}
+
+label{
+    font-size: large;
+}
+input{
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #000000;
+    box-shadow: #5c5b5ba8 0px 0px 5px 0px;
+}
+
+#submit-btn{
+    background-color: #E31D1A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: large;
+    margin-top: 10px;
+    box-shadow: #5c5b5ba8 0px 0px 5px 0px;
+}
+
+#submit-btn:hover{
+    background-color: #A13224;
+    transition: 0.3s;
+}
+
+#info{
+    margin-top: 20px;
+   position: relative;
+   left: 15px;
+    font-size: large;
+    color: #E31D1A;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20%;
+    border: none;
+    background-color: #ffffff;
+    padding: 4px;
+}
+#info:hover{
+    background-color: #E31D1A;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#info-div{
+    margin-top: 20px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+#time-out-div{
+    margin-top:25px;
+    display: flex;
+    justify-content: center;
+}
