@@ -9,6 +9,7 @@ function liveTime() {
   now = new Date();
   currentTime.innerText = now.toLocaleTimeString();
 }
+liveTime();
 setInterval(liveTime, 1000);
 
 showInfoBtn.addEventListener("click", () => {
@@ -57,7 +58,7 @@ submitBtn.addEventListener("click", () => {
     hour12: true,
   });
 
-  // Display or use the resultTime
+  // Display resultTime
   console.log(`Resulting Time: ${resultTime}`);
   const result = document.getElementById("time-out");
   result.innerText = `Clock out at: ${resultTime}`;
