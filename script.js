@@ -17,13 +17,13 @@ showInfoBtn.addEventListener("click", () => {
   infoDiv.classList.toggle("hidden");
 });
 
+//jhandle submit button
 submitBtn.addEventListener("click", () => {
   const clockInValue = clockIn.value.trim(); // Get the clock-in time (e.g., "1:30pm")
 
   // Parse the time and handle AM/PM
   const timeRegex = /^(\d{1,2}):(\d{2})(am|pm)$/i; // Regex to match "hh:mmam" or "hh:mmpm"
   const match = clockInValue.match(timeRegex);
-
   if (!match) {
     alert(
       "Invalid time format. Please enter time in the format hh:mmam or hh:mmpm (e.g., 1:30pm)."
@@ -42,7 +42,10 @@ submitBtn.addEventListener("click", () => {
     hours = 0; // Convert 12 AM to 0 hours
   }
 
-  let remainingTime = Number(40 - adpTime.value) * 60;
+  let remainingTime =
+    adpTime.value <= 40
+      ? Number(40 - adpTime.value) * 60
+      : (40 - Number(adpTime.value - 40)) * 60;
 
   // Create a Date object for the clock-in time
   const clockInDate = new Date();
